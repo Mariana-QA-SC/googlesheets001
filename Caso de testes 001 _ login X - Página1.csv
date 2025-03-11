@@ -1,0 +1,19 @@
+Resumo:            Caso de Teste/ Validação do Login no Sistema X,,,,,,
+ID,CT-LOGIN-001,,,,,
+Objetivo:,Garantir que o sistema X permita login correto e bloqueie acessos inválidos.,,,,,
+Pré-requisitos:,Ter um usuário cadastrado no sistema.,,,,,
+,,,,,,
+#,Cenário,Passos,                           Resultado Esperado,,Status,Link
+,,,,,,
+1,Login com credenciais válidas,"1. Acessar tela de login.
+2. Inserir usuário válido.
+3. Inserir senha correta.
+4. Clicar em ""Entrar"".",Login realizado com sucesso e redirecionamento para a página inicial.,,,
+2,Login com credenciais inválidas,"1. Acessar tela de login.
+2. Inserir usuário/senha incorretos.
+3. Clicar em ""Entrar""","Exibir mensagem: ""Usuário ou senha inválidos"".",,,
+3,Login sem preencher campos,"1. Acessar tela de login.
+2. Deixar usuário e senha vazios.
+3. Clicar em ""Entrar"".",Exibir alerta solicitando preenchimento dos campos.,,,
+4,Bloqueio após 3 tentativas falhas,"1. Inserir senha incorreta 3 vezes.
+2. Tentar login novamente.","Exibir mensagem: ""Conta bloqueada. Tente mais tarde.""",,,
